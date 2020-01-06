@@ -1,19 +1,19 @@
 # Luis Alejandro Montilla
-![Foto](https://1.bp.blogspot.com/-7gHbUyBahE4/XdrcOPHloqI/AAAAAAAACsY/T6PXb_KZlFA_1yYC2ZLtoPKtUQH4SWBegCLcBGAsYHQ/s320/photo_2019-11-21_09-10-38.jpg)
+![image](https://1.bp.blogspot.com/-7gHbUyBahE4/XdrcOPHloqI/AAAAAAAACsY/T6PXb_KZlFA_1yYC2ZLtoPKtUQH4SWBegCLcBGAsYHQ/s320/photo_2019-11-21_09-10-38.jpg)
 
 
 **I am really excited to be part of class #8 of Hack Your Future Belgium!**
 
 ## Personal data:
 
-- Birthdate: 02/07/1994
+- Birthday: 02/07/1994
 - Place of birth: Guanare, Venezuela.
 - Address: Rue de Hotton 11, 6987 Rendeux.
 - Tel :+32487751895 
 - Email: luis_alejandro_499@hotmail.com
 
 ## About me:
-- My mother language is spanish, I speak an intermediate level of english and I am learning french.
+- My native language is spanish, I speak an intermediate level of english and I am learning french.
 - I love computers and the internet.
 - I arrived in Belgium on 03/10/2019.
 - I do not like fish.
