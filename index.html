@@ -3,20 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Portfolio</title>
   </head>
   <body>
-    <section>
-      <div class="container">
-        <h1>Porfolio</h1>
-        <div class="container">
+    <section class="main-container">
+      <h1>Porfolio</h1>
+      <div class="flex-container">
+        <div class="flex-item">
           <img
+            id="picture"
             src="https://1.bp.blogspot.com/-7gHbUyBahE4/XdrcOPHloqI/AAAAAAAACsY/T6PXb_KZlFA_1yYC2ZLtoPKtUQH4SWBegCLcBGAsYHQ/s320/photo_2019-11-21_09-10-38.jpg"
             alt="photo"
           />
           <h2>Luis Alejandro Montilla</h2>
           <h3>I am a Front-End Developer</h3>
-          <table>
+          <table id="table">
             <thead>
               <tr>
                 <th>Phone:</th>
@@ -54,9 +56,9 @@
                       alt="logo-facebook"
                   /></a>
 
-                  <a href="https://www.linkedin.com/" target="_blank"
+                  <a href="https://github.com/AlejoVE" target="_blank"
                     ><img
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
+                      src="http://pngimg.com/uploads/github/github_PNG20.png"
                       width="25px"
                       alt="logo-linkedin"
                   /></a>
@@ -66,21 +68,24 @@
           </table>
           <br />
         </div>
-        <div class="container" id="about">
+        <div class="flex-item" id="about">
           <h2>About me</h2>
           <p>
             Hi! I am a young Venezuelan lover of technology and computer
-            science. I am 25 years old and I currently live in Belgium. I hope
-            to work with you!
+            science.
           </p>
+          <p>
+            I am 25 years old and I currently live in Belgium.
+          </p>
+          <p>I hope to work with you!</p>
         </div>
       </div>
-      <div class="container" id="repos">
+      <div id="repos">
+        <br />
         <h2>Repositories</h2>
-        <button>Get repositories</button>
+        <button class="btn1">Get repositories</button>
       </div>
-      <footer>
-        <h2>Porfolio</h2>
+      <footer id="footer">
         <div>
           <ul>
             <li><a href="#about">ABOUT ME</a></li>
