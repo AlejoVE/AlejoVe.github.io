@@ -54,14 +54,6 @@ button {
   align-items: center;
 }
 
-#footer {
-  position: relative;
-  bottom: 10px;
-  height: auto;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
 .flex-item {
   flex-wrap: wrap;
   width: 50%;
@@ -70,14 +62,11 @@ button {
   overflow: auto;
 }
 
-#table {
+.main-container {
+  width: 100%;
+  background-color: #0077b3;
+  text-align: center;
   margin: auto;
-}
-
-#repos {
-  max-height: fit-content;
-  background-color: #005580;
-  height: 200px;
 }
 #picture {
   max-width: 100%;
@@ -87,9 +76,19 @@ button {
   padding: 5px;
 }
 
-.main-container {
-  width: 100%;
-  background-color: #0077b3;
-  text-align: center;
+#repos {
+  max-height: fit-content;
+  background-color: #005580;
+  height: 200px;
+}
+#table {
   margin: auto;
+}
+#footer {
+  position: relative;
+  bottom: 10px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
