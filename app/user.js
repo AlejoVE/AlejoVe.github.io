@@ -7,7 +7,14 @@ export default class User {
   }
 
   getRepos() {
-    return fetch(`https://api.github.com/users/AlejoVE/repos`)
+    return fetch(`https://api.github.com/users/${this.username}/repos`)
+      .then((resp) => resp.json())
+      .then((data) => (this.repos = data))
+      .catch((error) => console.log("Error", error));
+  }
+
+  getFavorites() {
+    return fetch(`https://api.github.com/users/${this.username}/starred`)
       .then((resp) => resp.json())
       .then((data) => (this.repos = data))
       .catch((error) => console.log("Error", error));
