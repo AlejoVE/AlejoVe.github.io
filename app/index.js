@@ -3,33 +3,33 @@ import User from "./user.js";
 const init = () => {
   const buttonEl = document.getElementById("getRepos");
   const favButton = document.getElementById("getFavorites");
-  //   const buttonClear = document.getElementById("clear");
+  const buttonClear = document.getElementById("clear");
   const user = new User();
 
-  //   function clearButton() {
-  //     let button = document.createElement("button");
-  //     button.textContent = "clear";
-  //     button.className = "btn1";
-  //     button.id = "clear";
+  function clearButton() {
+    let button = document.createElement("button");
+    button.textContent = "clear";
+    button.className = "btn1";
+    button.id = "clear";
 
-  //     button.addEventListener("click", clear);
-  //     return button;
-  //   }
+    button.addEventListener("click", clear);
+    return button;
+  }
 
-  //   function clear() {
-  //     if (favButton.nextElementSibling === null) {
-  //       return false;
-  //     } else {
-  //       favButton.nextElementSibling.remove();
-  //     }
-  //   }
+  function clear() {
+    if (favButton.nextElementSibling === null) {
+      return false;
+    } else {
+      favButton.nextElementSibling.remove();
+    }
+  }
 
   function renderList() {
-    // clear();
+    clear();
     let container = user.render();
     let divEl = document.getElementById("repos");
-    // let button = clearButton();
-    // container.appendChild(button);
+    let button = clearButton();
+    container.appendChild(button);
     divEl.appendChild(container);
   }
 
