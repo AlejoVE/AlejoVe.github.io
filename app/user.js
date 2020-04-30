@@ -3,13 +3,32 @@ export default class User {
     this.name = "Luis Alejandro";
     this.lastName = "Montilla";
     this.username = "AlejoVE";
-    this.repos = [];
+    this.repos = {};
   }
 
   getRepos() {
-    fetch(`https://api.github.com/users/AlejoVE/repos`)
+    return fetch(`https://api.github.com/users/AlejoVE/repos`)
       .then((resp) => resp.json())
-      .then((data) => this.repos.push(data))
+      .then((data) => (this.repos = data))
       .catch((error) => console.log("Error", error));
+  }
+
+  render() {
+    let container = document.createElement("ul");
+    this.repos.forEach((item) => {
+      const liEl = document.createElement("li");
+      const aEl = document.createElement("a");
+      aEl.textContent = item.name;
+      aEl.href = item.html_url;
+      aEl.target = "_blank";
+
+      const brEl = document.createElement("br");
+      liEl.appendChild(aEl);
+
+      container.appendChild(liEl);
+      container.appendChild(brEl);
+    });
+
+    return container;
   }
 }

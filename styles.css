@@ -14,7 +14,7 @@ a {
   color: white;
 }
 li {
-  float: left;
+  /* float: left; */
   list-style: none;
   padding: 5px;
 }
@@ -77,9 +77,9 @@ button {
 }
 
 #repos {
-  max-height: fit-content;
   background-color: #005580;
-  height: 200px;
+  height: auto;
+  padding-bottom: 25px;
 }
 #table {
   margin: auto;
@@ -91,4 +91,8 @@ button {
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+
+#footer li {
+  float: left;
 }
