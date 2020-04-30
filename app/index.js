@@ -3,7 +3,6 @@ import User from "./user.js";
 const init = () => {
   const buttonEl = document.getElementById("getRepos");
   const favButton = document.getElementById("getFavorites");
-  const buttonClear = document.getElementById("clear");
   const user = new User();
 
   function clearButton() {
